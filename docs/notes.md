@@ -3,7 +3,12 @@
 This file is a place for me to scratch some temporary notes during development.
 
 ## Objects
-- Player
+- Profile
+  - Name
+  - High score
+  - Difficluties unlocked
+  - Perks unlocked
+  - 
 - Run
 - Round
 - Hand
