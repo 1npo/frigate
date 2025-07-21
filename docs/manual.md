@@ -1,10 +1,34 @@
-# Frigate
+# Manual
 
-Frigate is a Yahtzee-themed roguelike deckbuilding game inspired by Balatro.
+This manual explains how to play Frigate.
 
-## Goal
+## Content
 
-Win a game (run) of frigate by winning 10 rounds. Win each round by playing Yahtzee-style dice hands until your score matches or exceeds the round's score target. Each round has a higher score target than the previous round.
+- [Manual](#manual)
+  - [Content](#content)
+  - [Objective](#objective)
+  - [Components](#components)
+    - [Scorecard](#scorecard)
+    - [Dice](#dice)
+    - [Perks](#perks)
+      - [Perk Durations](#perk-durations)
+      - [Perk Modes](#perk-modes)
+      - [Perk Rarities](#perk-rarities)
+    - [Unlocking Perks](#unlocking-perks)
+    - [Currency](#currency)
+    - [Shop](#shop)
+  - [Gameplay](#gameplay)
+    - [Setup](#setup)
+    - [Playing Hands](#playing-hands)
+      - [Rolling Phase](#rolling-phase)
+      - [Scoring Phase](#scoring-phase)
+    - [Playing Rounds](#playing-rounds)
+  - [Difficulty](#difficulty)
+    - [Debuffs](#debuffs)
+
+## Objective
+
+Win a game (run) of Frigate by winning 10 rounds. Win each round by playing Yahtzee-style dice hands until your score matches or exceeds the round's score target. Each round has a higher score target than the previous round.
 
 ## Components
 
@@ -64,11 +88,11 @@ Perks modify how the game works. There are 3 categories of perks: dice perks, in
   - Score modifiers applied to the final score of your hand
   - How much currency you earn when scoring a slot
 
-Each perk has a duration and a mode.
+Each perk has a duration, mode, and rarity.
 
 #### Perk Durations
 
-There are 3 perk durations:
+The duration indicates how long the perk exists. There are 3 durations:
 
 - **Permanent** perks remain in effect until the perk is sold
 - **Temporary** perks expire after a certain duration (usually after some number of rounds)
@@ -76,10 +100,25 @@ There are 3 perk durations:
   
 #### Perk Modes
 
-There are 2 perk modes:
+The mode indicates how the perk is activated. There are 2 modes:
 
 - **Active** perks apply their modifications when manually triggered by the player
 - **Passive** perks apply their modifications automatically when some condition is met
+
+#### Perk Rarities
+
+The rarity indicates how likely you are to start with the perk or find it in the shop. There are 4 rarities:
+
+There are 4 perk rarities:
+
+- **Common**
+- **Uncommon**
+- **Rare**
+- **Legendary**
+
+### Unlocking Perks
+
+Not all perks are immediately available. Some perks need to be unlocked by achieving certain accomplishments in the game.
 
 ### Currency
 
@@ -91,7 +130,9 @@ The shop opens at the end of every 5 rounds. The shop shows 2 random perks from 
 
 ## Gameplay
 
-A run of frigate consists of 10 rounds with a variable number of hands. You keep playing hands until you've either scored all the hands on your scorecard, or your score matches or exceeds the round's score target -- whichever comes first. You win if your score meets or exceeds the score target. You lose if your score is less than the score target after playing every hand on your scorecard.
+A run of Frigate consists of 10 rounds, with a variable number of hands in each round. You keep playing hands until you've either scored all the hands on your scorecard, or your score matches or exceeds the round's score target -- whichever comes first.
+
+You win if your score meets or exceeds the score target. You lose if your score is less than the score target after playing every hand on your scorecard.
 
 ### Setup
 
@@ -108,7 +149,7 @@ Each hand consists of two phases: rolling and scoring.
 
 #### Rolling Phase
 
-A hand begins with the rolling phase. Perks can be sold, and active perks can be triggered, at any time during the rolling phase. You must enter a hand into a slot on your scorecard by the end of the rolling phase. Each slot can only be played once per round.
+Each hand begins with the rolling phase. You must enter a hand into a slot on your scorecard by the end of the rolling phase. Each slot can only be played once per round.
 
 1. Roll all your dice to determine your hand
 2. Choose either to play your hand, or re-roll one or more of your dice
@@ -119,22 +160,14 @@ A hand begins with the rolling phase. Perks can be sold, and active perks can be
    1. Set aside any dice you want to keep
    2. Re-roll the remaining dice
    3. Re-roll up to 2 times
-   4. Play your hand by selecting a slot on your scorcard
+   4. Play your hand by selecting a slot on your scorecard
    5. Go to the scoring phase
+
+Perks can be sold, and active perks can be triggered, at any time during the rolling phase.
 
 #### Scoring Phase
 
-A hand ends with the scoring phase.
-
-Perks can modify the base score or the base multiplier of a scorecard slot, either permanently or while the perk is active.
-
-- *For example, a perk for the "Aces" slot can add +5 to the sum, or increase its multiplier to 3x. This upgrade can either be permanent or only in effect while the perk is in your inventory.*
-
-Perks can also modify the final score of a scorecard slot.
-
-- *For example, after calculating the score times the multiplier, the resulting score can be further multiplied by 2x.*
-
-Scoring happens automatically after playing your hand in the rolling phase:
+Each hand ends with the scoring phase. Scoring happens automatically after playing your hand in the rolling phase, in this process:
 
 1. Apply any perks that modify the slot's base bonus
 2. Apply any perks that modify the slot's base multiplier
@@ -146,6 +179,14 @@ Scoring happens automatically after playing your hand in the rolling phase:
 8. Apply any perks that modify the currency earned
 9. Add any earned currency to your "wallet"
 
+Perks can modify the base score, multiplier, or reward of a scorecard slot, either permanently or while the perk is active.
+
+- *For example, a perk for the "Aces" slot can add +5 bonus points, or increase its multiplier to 3x.*
+
+Perks can also modify the final score of your hand.
+
+- *For example, after calculating summing your dice, adding bonus points, and multiplying the result, the resulting score can be further multiplied by 2x.*
+
 ### Playing Rounds
 
 A round ends when there are no more playable slots on your scorecard, or your total round score is equal to or greater than the score target.
@@ -155,3 +196,18 @@ If there are no more playable slots and your total round score is less than the 
 When you win a round, all the slots on your scorecard are emptied, and the next round begins.
 
 When you win round 10, you win the run, and can optionally continue playing in "endless" mode.
+
+## Difficulty
+
+You can choose the game difficulty when starting a new run. Only one difficulty level is available at the start.
+
+Once you win your first run, you can play runs at a higher difficulty level. Once you win a run at that difficulty level, you unlock an even higher level, and so-on.
+
+As you progress through difficulty levels, the score targets get higher, and debuffs start getting applied.
+
+**TODO: Figure out how to scale score targets as difficulty gets harder**
+
+### Debuffs
+
+**TODO: Figure out a debuff system and list of debuffs that apply for the duration of the run**
+
