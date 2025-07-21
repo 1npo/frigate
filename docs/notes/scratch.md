@@ -1,0 +1,107 @@
+# Scratch
+
+This file is a place for me to scratch some temporary notes during development.
+
+## Game Objects
+- HomeScreen
+  - Play
+  - Settings
+  - Profile
+  - Credits
+  - Links
+- Settings
+  - Keybinds
+  - Volume: Master
+  - Volume: Game
+  - Volume: Music
+  - Game Speed
+- UserProfile
+  - Name
+  - Linked accounts
+  - Stats
+- Accounts
+  - TBD - placeholder for if/when released in app stores
+- Stats
+  - All-time score
+  - Highest scoring hand played
+  - Highest number of rounds won in a run
+  - Highest number of hands played in a run
+  - Most currency gained in a run
+  - Most consecutive runs won
+  - Number of times each hand has been played
+  - Number of times each perk has been used
+  - Most played hand
+  - Most used perk
+  - Most purchsed slot
+  - Difficluties unlocked
+  - Perks unlocked
+- Player
+  - UserProfile
+  - Run
+- Run
+  - Run difficulty
+  - Current run score
+  - Current round
+  - Current currency amount
+  - Rounds
+  - Dice
+  - Scorecard
+  - Inventory
+- Round
+  - Round number
+  - Score target
+  - Difficulty debuffs
+  - Is complete?
+- Dice
+  - Set of die
+  - Number of dice in set
+  - Dice in hand
+  - Dice in holding bay
+  - Remaining re-rolls
+- Die
+  - Dice type
+  - Face values
+- Scorecard
+  - Slots
+- Slot
+  - Name
+  - Calculation
+  - Bonus
+  - Multiplier
+  - Reward
+  - Cost in shop
+  - Current level
+  - Current score in slot
+  - Is empty?
+- Inventory
+  - Perks
+  - Available slots
+- Perk
+  - Name
+  - Description
+  - Object modified
+  - Modification type
+  - Modification
+  - Cost in shop
+  - Rarity
+  - Duration
+  - Mode
+  - In inventory?
+- Shop
+  - Available perks: dice
+  - Available perks: inventory
+  - Available perks: scorecard
+  - Available scorecard slots
+  - Re-roll cost
+
+## Game Loop
+
+## Lore
+- Frigate has a nautical theme
+- You play the captain of a frigate engaging increasingly more powerful warships
+- Destroy 10 warships to win the battle
+- Round score target = hitpoints of enemy warship
+- Playing hands = firing salvos at enemy warship
+- Perks = cargo
+- Currency = requisitions
+
