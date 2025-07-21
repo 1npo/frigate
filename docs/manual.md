@@ -25,6 +25,7 @@ This manual explains how to play Frigate.
   - [Unlocking Features](#unlocking-features)
     - [Perks](#perks-1)
     - [Difficulty Levels](#difficulty-levels)
+      - [Level Scaling](#level-scaling)
       - [Debuffs](#debuffs)
 
 ## Objective
@@ -181,8 +182,18 @@ Once you win your first run, you can play runs at a higher difficulty level. Onc
 
 As you progress through difficulty levels, the score targets get higher, and debuffs start getting applied.
 
-**TODO: Figure out how to scale score targets as difficulty gets harder**
+#### Level Scaling
+
+The score target of each round is calculated using a scaling function. Each level up in difficulty changes this scaling function so that the target scores for each round get larger sooner in the run.
+
+**The scaling function is TBD and will be worked out through trial and error during development.**
+
+*Add description of scaling function here once determined*
 
 #### Debuffs
 
-**TODO: Figure out a debuff system and list of debuffs that apply for the duration of the run**
+Higher difficulty levels also have debuffs that apply for the whole run. *For example, all scorescard slots give -1 bonus and -1 multiplier.*
+
+**Debuffs are TBD and will be worked out through trial and error during development.**
+
+*Add description or table of debuffs here once determined*
