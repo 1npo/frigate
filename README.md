@@ -3,9 +3,9 @@
 A Yahtzee-themed roguelike deckbuilding game inspired by Balatro
 
 >[!NOTE]
-> This is a proof-of-concept. It's written in Python with Textual for the user interface, because I write Python for a living and Textual is the only GUI framework I'm familiar with. It's intended to be played in a terminal, or run as a web server and played in the browser.
+> This is a proof-of-concept. It's written in Python with Textual for the user interface, because I write Python for a living and Textual is the only GUI framework I'm familiar with. It's runs in a terminal, or can be run as a web server and played in your browser. This isn't an optimal user experience for a game.
 > 
-> If it ends up being fun and worth the effort, I plan to rewrite it in Kotlin so it can run natively on desktop and mobile, and be made available in app stores.
+> Writing this POC will let me flesh out the idea, fix issues with balancing and synergies, and figure out an optimal application design. If it ends up being fun and worth the effort, I plan to rewrite it in Kotlin with libGDX so it can run natively on desktop and mobile, and make it available in app stores.
 
 ## Contents
 
@@ -39,8 +39,8 @@ To run Frigate in web server mode:
 ## Documentation
 
 - See [docs/manual.md](docs/manual.md) for the game's instruction manual
-- See [docs/perks.md](docs/perks.md) for an exhaustive list of all available perks
-- See [docs/slots.md](docs/slots.md) for an exhaustive list of all possible scorecard slots
+- See [docs/perks.md](docs/perks.md) for an exhaustive list of perks
+- See [docs/slots.md](docs/slots.md) for an exhaustive list of scorecard slots
 
 ## Acknowledgements
 
@@ -48,4 +48,4 @@ To run Frigate in web server mode:
 
 ## Contributing
 
-Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for the ways you can contribute, and instructions on how to contribute. 
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for what you can contribute and how to contribute. 
