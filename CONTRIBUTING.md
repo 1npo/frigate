@@ -1,9 +1,9 @@
 ## What to Contribute
 
 - Report bugs
-- Request enhancements
+- Request enhancements or changes
 - Submit pull requests to fix bugs
-- Submit pull requests to implement enhancements
+- Submit pull requests to implement enhancements or changes
 
 ## How to Contribute
 
