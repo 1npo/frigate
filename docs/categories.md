@@ -1,8 +1,8 @@
-# Slots
+# Categories
 
-## Base Slots
+## Base Categories
 
-| Slot | Score Calculation | Base Score Bonus | Base Score Multiplier | Base Reward | Upgrading Adds Score / Bonus |
+| Category | Score Calculation | Base Score Bonus | Base Score Multiplier | Base Reward | Upgrading Adds Score / Bonus |
 | --- | --- | --- | --- | --- | --- |
 | Aces | Sum of all dice with 1 | +2 | x2 | $1 | +2 / x1 |
 | Twos | Sum of all dice with 2 | +2 | x2 | $1 | +2 / x1 |
@@ -20,9 +20,9 @@
 | Small Straight | Sum of the 4 consecutive dice | +8 | x3 | $2 | +8 / x1 |
 | Large Straight | Sum of all 5 consecutive dice | +8 | x3 | $2 | +8 / x1 |
 
-## Purchaseable Slots
+## Purchaseable Categories
 
-| Slot | Score Calculation | Base Score Bonus | Base Score Multiplier | Base Reward | Upgrading Adds Score / Bonus | Cost in Shop | Availability Requirements |
+| Category | Score Calculation | Base Score Bonus | Base Score Multiplier | Base Reward | Upgrading Adds Score / Bonus | Cost in Shop | Availability Requirements |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Sevens | Sum of all dice with 7 | +2 | x2 | $1 | +2 / x1 | $2 | Have at least 1 D8 or D10 in your set |
 | Eights | Sum of all dice with 8 | +2 | x2 | $1 | +2 / x1 | $2 | Have at least 1 D8 or D10 in your set |
