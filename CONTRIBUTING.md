@@ -47,16 +47,10 @@ uvx coverage run -m pytest
 
 ## Submitting a Pull Request
 
-1. Check out a feature branch:
-```bash
-git checkout -b feature-name
-```
+1. Check out a feature branch: `git checkout -b feature-name`
 2. Make your changes on this feature branch
 3. Make atomic commits with clear commit messages
 4. Push your commits to the feature branch
 5. Create a PR to merge the feature branch into `main`
-6. When the PR is approved, update your cloned repo:
-```bash
-git checkout main
-git pull origin main
-```
+6. When the PR is approved, update your cloned repo: `git checkout main; git pull origin main`
+
