@@ -5,7 +5,7 @@ A Yahtzee-themed roguelike deckbuilding game inspired by Balatro
 >[!NOTE]
 > This is a proof-of-concept. It's written in Python with Textual for the user interface, because I write Python for a living and Textual is the only GUI framework I'm familiar with. It's runs in a terminal, or can be run as a web server and played in your browser. This isn't an optimal user experience for a game.
 > 
-> Writing this POC will let me flesh out the idea, fix issues with balancing and synergies, and figure out an optimal application design. If it ends up being fun and worth the effort, I plan to rewrite it in Kotlin with libGDX so it can run natively on desktop and mobile, and make it available in app stores.
+> Writing this POC will let me flesh out the idea, fix issues with balancing and synergies, and figure out an optimal application design. If it ends up being fun and worth the effort, I plan to rewrite in Kotlin with libGDX so it can run natively on desktop and mobile, give it lore and a story, polish the UI, and make it available in app stores.
 
 ## Contents
 
@@ -38,9 +38,8 @@ To run Frigate in web server mode:
 
 ## Documentation
 
-- See [docs/manual.md](docs/manual.md) for the game's instruction manual
-- See [docs/perks.md](docs/perks.md) for an exhaustive list of perks
-- See [docs/slots.md](docs/slots.md) for an exhaustive list of scorecard slots
+* See [docs/rulebook.md](docs/rulebook.md) for the game's rulebook
+* See [docs/design/overview.md](docs/design/overview.md) for the game's technical documentation
 
 ## Acknowledgements
 
