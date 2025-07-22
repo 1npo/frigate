@@ -1,0 +1,113 @@
+# Objects
+
+## Screens
+
+- Splash screen
+  - Animation
+- Main menu
+  - Image/logo
+  - Title
+  - Play
+  - Settings
+    - Keybinds
+    - Volume: Master
+    - Volume: Game
+    - Volume: Music
+    - Game Speed
+  - Profile
+    - Name
+    - Linked account
+      - Email
+      - Service
+    - Stats
+      - All-time score
+      - Highest scoring hand played
+      - Highest number of rounds won in a run
+      - Highest number of hands played in a run
+      - Most currency gained in a run
+      - Most consecutive runs won
+      - Number of times each hand has been played
+      - Number of times each perk has been used
+      - Most played hand
+      - Most used perk
+      - Most purchsed slot
+      - Difficluties unlocked
+      - Perks unlocked
+  - Credits
+    - Credit
+      - Category
+      - Person
+      - Contribution
+  - Links
+    - Link
+      - Link name
+      - Link description
+- Main game screen
+  - Run info
+    - Run score
+    - Run difficulty
+    - Run debuffs
+    - Round score target
+    - Round score
+    - Round number
+    - Round debuffs
+    - Wallet
+  - Scorecard
+    - Categories
+      - Name
+      - Bonus
+      - Multiplier
+      - Reward
+      - Score box
+  - Inventory
+    - Inventory slot
+      - Perk
+        - Name
+        - Description
+        - Object modified
+        - Modification type
+        - Modification
+        - Cost in shop
+        - Rarity
+          - Common
+          - Uncommon
+          - Rare
+          - Legendary
+        - Duration
+          - Permanent
+          - Temporary
+          - One-time
+        - Mode
+          - Passive
+          - Active
+  - Tray
+    - Dice
+      - Die
+        - Type
+        - Faces
+  - Queue
+    - Queue slot
+  - Control panel
+    - Roll button
+    - Play hand button
+    - Pause button
+      - Pause menu
+        - Return to game
+        - Go to main menu
+        - Go to settings
+        - End run
+        - Exit game
+    - Info button
+      - Rulebook
+      - Categories
+      - Perks
+- Shop screen
+  - Shop number
+  - Available items
+    - Dice perks
+    - Scorecard perks
+    - Onventory perks
+    - Hand categories
+  - Re-roll shop button
+  - Purchase selected items button
+  - Close shop button
