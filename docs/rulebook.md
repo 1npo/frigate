@@ -44,7 +44,7 @@ Additional hand categories become available to purchase in the shop when you hav
 
 ### Dice
 
-You start with a set of 5 D6 dice. Perks enable you to change the type of dice in your hand and add new dice to your hand. The available types of dice are D4, D6, D8, and D10. You can have a maximum of 8 dice in your set.
+You start with a set of 5 D6 dice. Perks enable you to change the type of dice in your hand and add new dice to your hand. The available types of dice are D4, D6, D8, and D10. You can have a maximum of 8 dice in your set. Perks can change the numbers on the faces of your die, and they can add permanent modifiers to die faces.
 
 ### Perks
 
@@ -112,17 +112,19 @@ You must enter a hand into a scoring box on your scorecard every round. The scor
 
 #### Scoring Phase
 
-Each hand ends with the scoring phase, and the scoring happens automatically in this order:
+Each hand ends with the scoring phase. The scoring happens automatically in the order listed below. If the dice in the queue sum up to 0, then hand score is 0, the reward is 0, and the scoring phase is skipped.
 
 1. Apply any perks that modify the category bonus
 2. Apply any perks that modify the category multiplier
-3. Perform the scoring calculation on the hand (sum)
-4. Add the bonus to this sum
-5. Multiply the summation by the multiplier to get your hand score
+3. For each die in the queue from left to right:
+   1. Apply any modifiers on the die face
+   2. Add the face value to the category score box
+4. Add the bonus to the score box
+5. Multiply the value in the score box by the multiplier - this is your hand score
 6. Apply any perks that modify your hand score
 7. Add your hand score to your round score
 8. Apply any perks that modify the category reward
-9. Add any earned money to your wallet
+9. Add category reward amount to your wallet
 
 ### Playing Rounds
 
