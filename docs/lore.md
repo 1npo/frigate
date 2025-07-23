@@ -1,22 +1,3 @@
-# Notes
-
-This file is a place for me to scratch some temporary notes during development.
-
-## Objects
-- Profile
-  - Name
-  - High score
-  - Difficluties unlocked
-  - Perks unlocked
-  - 
-- Run
-- Round
-- Hand
-- Die
-- Perk
-- Shop
-- Scorecard
-- Slot
 
 ## Lore
 - Frigate has a nautical theme
