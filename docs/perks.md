@@ -1,47 +1,19 @@
 # Perks
 
-## Scratch
-
-- Dice
-  - How many dice are in your set
-  - What types of dice are in your set
-  - The values on the faces of your dice
-  - Modifiers applied to dice faces
-- Inventory
-  - How many perks you can hold in your inventory
-  - How much it costs to buy certain perks
-  - Modifiers triggered by buying or selling perks
-- Scorecard
-  - Number of times you can play a category of hand in a round
-  - Upgrade a category
-  - Remove a category
-  - Modifier applied after calculating hand score
-
-
-Perks can modify the base score, multiplier, or reward of a scorecard slot, either permanently or while the perk is active.
-
-- *For example, a perk for the "Aces" slot can add +5 bonus points, or increase its multiplier to 3x.*
-
-Perks can modify your total hand score.
-
-- *For example, after calculating summing your dice, adding bonus points, and multiplying the result, the resulting score can be further multiplied by 2x.*
-
-
 ## Attributes
-
-Each perk has these attributes:
 
 - Name
 - Description
+- Trigger
 - Object modified
 - Modification type
 - Modification
 - Cost in shop
 - Rarity
-  - Common
-  - Uncommon
-  - Rare
-  - Legendary
+  - Common (%70 likelihood)
+  - Uncommon (%20 likelihood)
+  - Rare (%12 likelihood)
+  - Legendary (%3 likelihood)
 - Duration
   - Permanent
   - Temporary
@@ -49,13 +21,25 @@ Each perk has these attributes:
 - Mode
   - Passive
   - Active
-- In inventory?
+
+## Triggers
+
+- Before/during/after scoring
+- Start/end of the hand
+- Start/end of the round
+- When perk is added to/removed from inventory
+- Certain perk is in your inventory
+- Certain hand is played
+- Certain dice values are played
+- When dice in certain queue positions are evaluated
+- When the shop opens/closes
 
 ## Modification Types
 
 - Increase/decrease value
 - Change value
-
+- Add/destroy
+- Gain (the perk gains some)
 
 ## Objects Modified
 
@@ -64,25 +48,44 @@ Each perk has these attributes:
 - Count of dice in set
 - Type of dice in set
 - Values on face of dice
-- Position of dice in queue
+- Modifier on die face
 
 ### Related to Scorecard
 
-- Scorecard slots (add, remove)
-- Max times a slot can be played per round
-- Slot level
-- Slot cost in shop
-- Slot bonus
-- Slot multiplier
-- Slot reward
+- Scorecard categories (add, remove)
+- Max times a category can be played per round
+- Category level
+- Category cost in shop
+- Category bonus
+- Category multiplier
+- Category reward
 - Hand score modifier
+- Round score modifier
 
 ### Related to Inventory
 
-- Max perk slots in inventory
+- Available perk spaces in inventory
 - Perk cost
 
-## Components
+## Modifications
+
+- Plus / minus bonus
+- Plus / minus multiplier
+- Plus / minus reward
+- Plus / minus bonus to hand score
+- Plus / minus multiplier to hand score
+- Plus / minus bonus to round score
+- Plus / minus multiplier to round score
+- Reduce cost of perk
+- Reduce cost of category
+- Reduce cost of re-roll
+- Add new die to set
+- Remove die from set
+- Replace die in set with a new die
+- Change the value on a die face
+- Add modifier to die face
+- Create perk in inventory
+- Add space to / remove space from inventory
 
 ## Listing
 
