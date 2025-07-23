@@ -1,7 +1,5 @@
 # Objects
 
-## Screens
-
 - Splash screen
   - Animation
 - Main menu
@@ -59,6 +57,8 @@
       - Multiplier
       - Reward
       - Score box
+      - Calculation tooltip
+        - Calculation
   - Inventory
     - Inventory slot
       - Perk
