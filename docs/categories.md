@@ -12,13 +12,15 @@
 | Sixes | Sum of all dice with 6 | +2 | x2 | $1 | +2 / x1 |
 | Wild | Sum of all dice | +2 | x2 | $1 | +2 / x1 |
 | Pair | Sum of the 2 paired dice | +4 | x2 | $1 | +4 / x1 |
-| Two Pair | Sum of the 4 dice | +4 | x2 | $1 | +4 / x1 |
-| Full House | Sum of all 5 dice | +6 | x2 | $1 | +6 / x1 |
-| Three of a Kind | Sum of the 3 dice | +6 | x2 | $1 | +6 / x1 |
-| Four of a Kind | Sum of the 4 dice | +6 | x2 | $1 | +6 / x1 |
-| Five of a Kind | Sum of the 5 dice | +8 | x3 | $2 | +8 / x1 |
-| Small Straight | Sum of the 4 consecutive dice | +8 | x3 | $2 | +8 / x1 |
-| Large Straight | Sum of all 5 consecutive dice | +8 | x3 | $2 | +8 / x1 |
+| *Two Pair | Sum of the 4 dice | +4 | x2 | $1 | +4 / x1 |
+| *Full House | Sum of all 5 dice | +6 | x2 | $1 | +6 / x1 |
+| *Three of a Kind | Sum of the 3 dice | +6 | x2 | $1 | +6 / x1 |
+| *Four of a Kind | Sum of the 4 dice | +6 | x2 | $1 | +6 / x1 |
+| *Five of a Kind | Sum of the 5 dice | +8 | x3 | $2 | +8 / x1 |
+| *Small Straight | Sum of the 4 consecutive dice | +8 | x3 | $2 | +8 / x1 |
+| *Large Straight | Sum of all 5 consecutive dice | +8 | x3 | $2 | +8 / x1 |
+
+\* This category will become deactivated if the current hand size is reduced to less than 5 dice. It will be reactivated once the hand size returns to >= 5.
 
 ## Purchaseable Categories
 
@@ -35,3 +37,5 @@
 | Six of a Kind | Sum of the 6 dice | +16 | x4 | $4 | +16 / x3 | $4 |  Have at least 6 dice in your set |
 | Seven of a Kind | Sum of the 7 dice | +18 | x5 | $4 | +18 / x3 | $4 | Have at least 7 dice in your set |
 | Eight of a Kind | Sum of the 8 dice | +20 | x6 | $4 | +20 / x3 | $4 | Have at least 8 dice in your set |
+
+\* After purchased, this category will be deactivated if the availability requirements are no longer met. If the availability requirements are met again, the category will be reactivated without needing to be re-purchased.
