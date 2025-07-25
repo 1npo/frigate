@@ -6,14 +6,19 @@
 - Description
 - Trigger
 - Object modified
-- Modification type
-- Modification
+- Modifications
+  - Modification type
+  - Modification
 - Cost in shop
+- Editions
+  - Standard
+  - Holographic
+  - Polychrome
 - Rarity
-  - Common (%70 likelihood)
-  - Uncommon (%20 likelihood)
-  - Rare (%12 likelihood)
-  - Legendary (%3 likelihood)
+  - Common
+  - Uncommon
+  - Rare
+  - Legendary
 - Duration
   - Permanent
   - Temporary
@@ -28,9 +33,9 @@
 - Start/end of the hand
 - Start/end of the round
 - When perk is added to/removed from inventory
-- Certain perk is in your inventory
-- Certain hand is played
-- Certain dice values are played
+- When a certain perk is in your inventory
+- When a certain hand is played
+- When certain dice values are played
 - When dice in certain queue positions are evaluated
 - When the shop opens/closes
 
@@ -45,8 +50,7 @@
 
 ### Related to Dice
 
-- Count of dice in set
-- Type of dice in set
+- Dice in collection
 - Values on face of dice
 - Modifier on die face
 
@@ -59,6 +63,7 @@
 - Category bonus
 - Category multiplier
 - Category reward
+- Hand size
 - Hand score modifier
 - Round score modifier
 
@@ -69,22 +74,25 @@
 
 ## Modifications
 
-- Plus / minus bonus
-- Plus / minus multiplier
-- Plus / minus reward
+- Increase / decrease hand size
+- Increase / decrease category level
+- Plus / minus category bonus
+- Plus / minus category multiplier
+- Plus / minus category reward
 - Plus / minus bonus to hand score
 - Plus / minus multiplier to hand score
 - Plus / minus bonus to round score
 - Plus / minus multiplier to round score
-- Reduce cost of perk
-- Reduce cost of category
-- Reduce cost of re-roll
-- Add new die to set
-- Remove die from set
-- Replace die in set with a new die
+- Increase / reduce cost of perk
+- Increase / reduce cost of category
+- Increase / reduce cost of re-roll
+- Add new die to collection
+- Remove die from collection
+- Replace die in collection with a new die
 - Change the value on a die face
 - Add modifier to die face
 - Create perk in inventory
+- Remove perk from inventory
 - Add space to / remove space from inventory
 
 ## Listing
