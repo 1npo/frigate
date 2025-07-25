@@ -2,11 +2,6 @@
 
 A Yahtzee-themed roguelike deckbuilding game inspired by Balatro
 
->[!NOTE]
-> This is a proof-of-concept. It's written in Python with Textual for the user interface, because I write Python for a living and Textual is the only GUI framework I'm familiar with. It's runs in a terminal, or can be run as a web server and played in your browser. This isn't an optimal user experience for a game.
-> 
-> Writing this POC will let me flesh out the idea, fix issues with balancing and synergies, and figure out an optimal application design. If it ends up being fun and worth the effort, I plan to rewrite in Kotlin with libGDX so it can run natively on desktop and mobile, give it lore and a story, polish the UI, and make it available in app stores.
-
 ## Contents
 
 - [Frigate](#frigate)
