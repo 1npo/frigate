@@ -1,16 +1,16 @@
 # Perks
 
-## Attributes
+## Perk Attributes
 
 - Name
-- Description
-- Trigger
-- Object modified
 - Modifications
-  - Modification type
+  - Description (English sentence representation of all Modification elements)
   - Modification
+    - Modification trigger
+    - Modification
+    - Modified object
 - Cost in shop
-- Editions
+- Edition
   - Standard
   - Holographic
   - Polychrome
@@ -27,79 +27,106 @@
   - Passive
   - Active
 
-## Triggers
-
-- Before/during/after scoring
-- Start/end of the hand
-- Start/end of the round
-- When perk is added to/removed from inventory
-- When a certain perk is in your inventory
-- When a certain hand is played
-- When certain dice values are played
-- When dice in certain queue positions are evaluated
-- When the shop opens/closes
-
-## Modification Types
-
-- Increase/decrease value
-- Change value
-- Add/destroy
-- Gain (the perk gains some)
-
-## Objects Modified
-
-### Related to Dice
-
-- Dice in collection
-- Values on face of dice
-- Modifier on die face
-
-### Related to Scorecard
-
-- Scorecard categories (add, remove)
-- Max times a category can be played per round
-- Category level
-- Category cost in shop
-- Category bonus
-- Category multiplier
-- Category reward
-- Hand size
-- Hand score modifier
-- Round score modifier
-
-### Related to Inventory
-
-- Available perk spaces in inventory
-- Perk cost
+## Modification Triggers
+ 
+- When {perk} is applied in the scoring phase
+- When {die} (or {dice}) are evaluated in the scoring phase
+- When used or sold by the player in the rolling phase
+- When {perk} is added to or removed from inventory
+- While {perk} is in your inventory
+- When {category} is scored
+- When round starts or ends
+- When rolling phase starts
+- When die in queue position {queue_pos} is evaluated
+- When the shop opens or closes
 
 ## Modifications
 
-- Increase / decrease hand size
-- Increase / decrease category level
-- Plus / minus category bonus
-- Plus / minus category multiplier
-- Plus / minus category reward
-- Plus / minus bonus to hand score
-- Plus / minus multiplier to hand score
-- Plus / minus bonus to round score
-- Plus / minus multiplier to round score
-- Increase / reduce cost of perk
-- Increase / reduce cost of category
-- Increase / reduce cost of re-roll
-- Add new die to collection
-- Remove die from collection
-- Replace die in collection with a new die
-- Change the value on a die face
-- Add modifier to die face
-- Create perk in inventory
-- Remove perk from inventory
-- Add space to / remove space from inventory
+### Dice Modifications
 
-## Listing
+- Set the value of the {count} selected die faces in the queue to {value}
+- Set {count} faces on selected die to {value}
+- Add {modifier} to {count} selected die face(s)
+- Add {count} {die_type} to collection
+- Delete {count_1} {die_type_1} from collection and add {count_2} {die_type_2}
+
+### Scoring Modifications
+
+- Increase hand size by 1 (stops appearing when hand size is the max 8)
+- Increase number of times {category} can be scored in a round by 1
+- Upgrade level of selected category {value} time(s)
+- Upgrade level of all categories by 1
+- Upgrade level of all base categories by 1
+- Upgrade level of all purchased categories by 1
+- Each {dice_type} in collection adds + or x {value} bonus points to {category}
+- Each {dice_type} in collection adds + or x {value} multiplier to {category}
+- Each {dice_type} in collection adds + or x {value} reward to {category}
+- Each {dice_type} in collection adds + or x {value} bonus points to hand score
+- Each {dice_type} in collection adds + or x {value} multiplier to hand score
+- Each {dice_type} in collection adds + or x {value} reward to hand reward
+- Each {dice_type} in collection adds + or x {value} bonus points to round score (at end of round)
+- Each {dice_type} in collection adds + or x {value} multiplier to round score (at end of round)
+- Each {dice_type} in collection adds + or x {value} reward to round reward (at end of round)
+- Add + or x {value} bonus points to hand when die in queue is evaluated
+- Add + or x {value} bonus points to hand when scored
+- Add + or x {value} multiplier to hand when die in queue is evaluated
+- Add + or x {value} multiplier to hand when scored
+- Add + or x {value} reward to hand when die in queue is evaluated
+- Add + or x {value} reward to hand when scored
+- Add + or x {value} bonus points to hand when die in queue slot {slot_num} is evaluated
+- Add + or x {value} bonus points to hand when die in the first/last/odd/even queue slot(s) are evaluated
+- Add + or x {value} multiplier to hand when die in queue slot {slot_num} is evaluated
+- Add + or x {value} multiplier to hand when die in the first/last/odd/even queue slot(s) are evaluated
+- Add + or x {value} reward to hand when die in queue slot {slot_num} is evaluated
+- Add + or x {value} reward to hand when die in the first/last/odd/even queue slot(s) are evaluated
+- Add + or x {value} to wallet
+
+### Inventory Modifications
+
+- Increase inventory size by {value}
+- Increase perk queue size by {value}
+- Add {count} random perk(s) to your inventory
+- Add {count} random perk(s) to your inventory when hand scores 0
+- {chance} chance that the first {perk_type} in the next shop is {rarity}
+- {chance} chance that the first {perk_type} in the next shop is {edition}
+- Delete {count_1} {perk_type_1} from inventory and add {count_2} {die_type_2}
+
+### Shop Modifications
+
+- Reduce cost of re-roll in the next shop by {value}
+- Reduce cost of {perk_type} in the next shop by {value}
+- Reduce cost of new categories in the next shop by {value}
+- Reduce cost of category upgrades in the next shop by {value}
+- Reduce cost of all items in next shop by {value}
+
+## List of Perks
+
+Perks are listed in this format:
+
+- Name
+- Cost
+- Edition
+- Rarity
+- Duration
+- Mode
+- Modifications
+  - Description 1
+  - ...
+  - Description N
+
+### Counts
+
+There are 125 perks in total:
+
+- 50 **Common** perks
+- 50 **Uncommon** perks
+- 20 **Rare** perks
+- 5 **Legendary** perks
 
 ### List of Dice Perks
 
-### List of Scorecard Perks
+### List of Scoring Perks
 
 ### List of Inventory Perks
 
+### List of Shop Perks
