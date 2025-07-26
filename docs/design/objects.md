@@ -31,6 +31,7 @@
       - Most purchsed slot
       - Difficluties unlocked
       - Perks unlocked
+  - Tour / Tutorial
   - Credits
     - Credit
       - Category
@@ -111,3 +112,9 @@
   - Re-roll shop button
   - Purchase selected items button
   - Close shop button
+- Game Info
+  - Rulebook
+  - Dice
+  - Categories
+  - Perks
+  - Modification types
