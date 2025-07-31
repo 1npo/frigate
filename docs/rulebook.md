@@ -11,10 +11,15 @@ This rulebook explains how to play Frigate.
     - [Scorecard](#scorecard)
     - [Dice](#dice)
     - [Perks](#perks)
-      - [Perk Durations](#perk-durations)
+      - [Description](#description)
+      - [Types](#types)
+      - [Durations](#durations)
       - [Perk Modes](#perk-modes)
-      - [Perk Rarities](#perk-rarities)
-      - [Perk Editions](#perk-editions)
+      - [Rarities](#rarities)
+      - [Targets](#targets)
+      - [Actions](#actions)
+      - [Values](#values)
+      - [Inventory](#inventory)
     - [Money](#money)
     - [Shop](#shop)
   - [Gameplay](#gameplay)
@@ -33,58 +38,146 @@ This rulebook explains how to play Frigate.
 
 ## Objective
 
-Win a round of Frigate by playing Yahtzee-style dice hands until your score matches or exceeds the round's score target. Each round has a higher score target than the previous round. Win a game (run) by winning 15 rounds. 
+Win a round of Frigate by playing Yahtzee-style dice hands until your score matches or exceeds the round's score target. Each round has a higher score target than the previous round. So you build a scoring engine with dice and perks that can keep up with the increased score targets. Win a game (run) by winning 15 rounds. 
 
 ## Components
 
-You start each run with a scorecard, a collection of 5 D6 dice, 3 random perks in an inventory that holds 5 perks, and a wallet containing a small amount of starting money. Perks modify almost every aspect of the game. After every 5 hands, a shop appears where you can spend money to buy new perks and scorecard categories.
+You start each run with the following:
+
+- A scorecard that lists a set of 15 scoring categories
+- A collection of 5 D6 dice
+- 3 random perk cards in an inventory that holds 5 cards
+- A wallet containing $5 of starting money
+- A tray where you place the dice you'll roll
+- A queue where you arrange the rolled dice into hands
 
 ### Scorecard
 
-You start with a base scorecard that has 15 categories of hands you can play. Each category has a scoring calculation, a bonus, a multiplier, a reward, and a scoring box. Categories can be upgraded to permanently increase their bonus, multiplier, and reward.
+You start with a scorecard that has 15 categories of hands you can play. Each scoring category has the following attributes:
 
-Additional hand categories become available to purchase in the shop when you have the dice needed to play those hands. For example, the "Eights" category becomes available when your dice set includes at least one D8. See [categories.md](categories.md) for an exhaustive list of all categories and their details.
+- A level
+- A scoring calculation
+- A bonus
+- a multiplier
+- A reward
+- A a scoring box
+
+Category levels can be upgraded to permanently increase their bonus, multiplier, and reward. Additional scoring categories become available to purchase in the shop when you have the dice needed to play those hands. For example, the "Eights" category becomes available when your dice set includes at least one D8.
+
+See [docs/categories.md](categories.md) for an exhaustive list of all categories and their details.
 
 ### Dice
 
-You start with a set of 5 D6 dice. Perks enable you to add, remove, or modify dice in your collection. They can also change the numbers on the faces of your die, and they can add permanent modifiers to die faces. You can add an unlimited number of dice to your collection. The available types of dice are D4, D6, D8, and D10.
+You start with a set of 5 D6 dice. Perk cards can be used to add, remove, or modify dice in your collection. They can also change the values on die faces and apply perks to them. Dice purchased in the shop will occasionally have perks on one or more of their faces. You can add an unlimited number of dice to your collection. The available types of dice are D4, D6, D8, and D10.
 
 ### Perks
 
-Perks modify how the game works. There are 4 types of perks: dice perks, scoring perks, inventory perks, and shop perks. Each perk modifies something about that game component, and has a duration, mode, rarity, and edition. See [perks.md](perks.md) for an exhaustive list of all perks and their details.
+A perk modifies something about one or more game components, and has the following attributes:
 
-#### Perk Durations
+- Name
+- Description
+- Type
+- Duration
+- Mode
+- Rarity
+- Target
+- Action
+- Value
+- Trigger (optional)
+- Condition (optional)
 
-The duration of a perk indicates how long it exists in your inventory. There are 3 durations:
+See [docs/perks.md](perks.md) for an exhaustive list of all perks and their details.
 
-- **Permanent** perks remain in effect until the perk is destroyed or sold.
-- **Temporary** perks expire after a certain duration (usually after some number of hands or rounds).
-- **One-time** perks are destroyed immediately after they're activated 
+#### Description
+
+The description of a perk describes the duration, mode, target, action, value, trigger, and duration of the perk. The description uses a consistent naming and phrasing scheme. For example, the perk descriptions contain the following attributes:
+
+- `Create 1 random Uncommon perk when Small Straight is scored with a hand of 1,2,3,4`
+  - **Duration** -> Permanent
+  - **Target** -> random Uncommon perk 
+  - **Action** -> Create
+  - **Value** -> 1
+  - **Trigger** -> Score a Small Straight
+  - **Condition** -> Hand contains 1,2,3,4
+
+- `Gain +1 multiplier every time {category} is scored (category changes at end of hand, currently +?)`
+  - **Duration** -> Permanent
+  - **Target** -> The perk card itself
+  - **Action** -> Add
+  - **Value** -> 1
+  - **Trigger** -> Category is scored
+
+#### Types
+
+There are two types of perks: perk cards and dice perks. Perk cards are cards that appear in your inventory and can be purchased in the shop. Dice perks are perks applied to die faces.
+
+#### Durations
+
+The duration indicates how long the perk exists in your inventory. There are 3 durations:
+
+- **Permanent** perks remain in effect until the perk is destroyed or sold
+- **Temporary** perks expire after a certain duration (usually after some number of hands or rounds)
+- **One-time** perks are destroyed immediately after they're activated
 
 #### Perk Modes
 
-The mode indicates how the perk is activated. There are 3 modes:
+The mode indicates how the perk is activated. There are 2 modes:
 
-- **Active** perks apply their modifications when they're used by the player in the rolling phase of a hand.
-- **Queued** perks apply their modifications when they're evaluated in the scoring phase of a hand.
-- **Passive** perks apply their modifications automatically when some condition is met.
+- **Active** perks apply their modifications when they're used by the player
+- **Passive** perks apply their modifications automatically when some condition is met
 
-#### Perk Rarities
+#### Rarities
 
 The rarity indicates how impactful the perk is, and how likely you are to start with it or find it in the shop. The rarer a perk is, the more impactful it is to the game, and the harder it is to find. There are 4 rarities:
 
-- **Common** perks have a %70 chance of appearing.
-- **Uncommon** perks have a %20 chance of appearing.
-- **Rare** perks have a %12 chance of appearing.
-- **Legendary** perks have a %3 chance of appearing.
+- **Common** perks have a %60 chance of appearing
+- **Uncommon** perks have a %25 chance of appearing
+- **Rare** perks have a %10 chance of appearing
+- **Legendary** perks have a %5 chance of appearing
 
-#### Perk Editions
+#### Targets
 
-The edition indicates how many additional modifications a perk applies. There are 3 editions:
+Perks target one or more of these game components:
 
-- **Standard** edition perks have 0 additional modifications
-- **Foil** edition perks have 1 additional modification
-- **Holographic** edition perks have 2 additional modifications
+- Dice
+- Dice faces
+- Category bonus
+- Category mult
+- Category reward
+- Category level
+- Hand size
+- Hand score
+- Round score
+- Round debuff
+- Rolling phase
+- Scoring phase
+- Shop cost
+- Shop stock
+- Perk card
+- Perk value
+- Inventory size
+
+#### Actions
+
+Perks perform one or more of these actions on the target:
+
+- Set a value
+- Add a value
+- Subtract a value
+- Multiply a value
+- Create an object
+- Destroy an object
+- Disable an object
+
+Dice and perk cards can be created, destroyed, or disabled. Scorecard categories can only be created. Debuffs can only be disabled. Every other game component that's modified by a perk is a number that's set, added to, subtracted from, or multiplied.
+
+#### Values
+
+The value of a perk is the amount that the target is modified by, or the name of the object being created, destroyed, or disabled. For example, in this perk description, the value is 1: `Add $1 to category reward for each die in collection`.
+
+#### Inventory
+
+Your inventory can hold a max of 5 perk cards when the run starts. Perks can be used to increase or decrease the maximum number of slots in your inventory. There's no limit to how many slots your inventory can have.
 
 ### Money
 
@@ -92,25 +185,37 @@ You start each run with a small amount of money in your wallet. Money is added t
 
 ### Shop
 
-At the end of every 5 hands, the game pauses and the shop opens. The shop shows 2 random perks of each type, 5 random dice for purchase, and all scorecard categories available for purchase or upgrade. The shop can be re-stocked with a new set of random items for a cost. You can buy any or all the items in the shop, if you have enough money and enough space in your inventory and collection. You can also choose to close the shop without spending any money. Once you close the shop, it won't be available again until it opens in another 5 hands.
+After every 5 hands, the game pauses and a shop appears with the following items for purchase:
+
+- 5 random perk cards
+- 5 random dice
+- Available scorecard categories
+- Available scorecard upgrades
+
+The shop can be re-stocked with a new set of random items for a cost. You can buy any or all the items in the shop, if you have enough money and enough space in your inventory and collection. You can also choose to close the shop without spending any money. Once you close the shop, it won't be available until it opens again in another 5 hands.
 
 ## Gameplay
 
-A run of Frigate consists of 15 rounds, with a variable number of hands in each round. You keep playing hands until you've either played every category of hand on your scorecard, or your round score matches or exceeds the round's score target -- whichever comes first. You win the round if your score meets or exceeds the score target. You lose the run if your score is less than the score target after playing every hand on your scorecard. Win the run by winning 15 rounds.
+A run of Frigate consists of 15 rounds, with a variable number of hands in each round. You keep playing hands until you've either played every category of hand on your scorecard, or your round score matches or exceeds the round's score target -- whichever comes first. If your score meets or exceeds the score target, you win the round. If your score is less than the score target after playing every hand on your scorecard, you lose the round and the run. Win the run by winning all 15 rounds.
 
 ### Game Board
 
-There are 7 areas of the game board:
+There are 8 areas of the game board:
 
-- **Run, Round, Hand, and Wallet Details** - Shows the current numbers and scores
-- **Scorecard** - All available categories with their details and score boxes
-- **Perk inventory** - All owned perks that are available to use
-  - Size of perk inventory is limited, but can be increased by using certain perks
-- **Perk queue** - One-time perks are placed here to be used (and then destroyed) when the hand is played 
-- **Dice collection** - Pool of all dice that are available to use for rolling hands
-  - Size of collection is unlimited, is increased whenever new dice are added
+- **Details** - Shows the current Run, Round, Hand, and Wallet numbers & scores
+- **Scorecard** - All available categories and their attributes
+- **Perk card inventory** - Ordered arrangement of all perk cards that are available to use
+- **Dice collection** - Drawer of all dice that are available to use for rolling hands
 - **Throwing tray** - Dice being rolled for a hand are stored and rolled here
 - **Dice queue** - Rolled dice are arranged in this queue to be played as a hand
+- **Control panel** - Contains the buttons that:
+  - (Re-)roll your dice
+  - Play your hand
+  - Use a perk card
+  - Sell a perk card
+  - Show your dice collection
+  - Show the game documentation
+  - Open the menu
 
 ### Playing Hands
 
@@ -122,37 +227,37 @@ The starting hand size is 5 dice. It can be reduced to a minimum of 2 dice, and 
 
 Each hand begins with the rolling phase:
 
-1. Select N dice from your collection for this hand, where N is the current hand size, and place them in the tray (if you don't already have any dice in the tray)
-2. Roll all the dice in the tray to determine your hand
-3. Move any dice you want to keep into the dice queue
-4. Re-roll any dice you leave in the tray
-5. Repeat steps 2-3 until no re-rolls remain, or all the dice are queued to play
-6. Add any perks to the perk queue
-7. Select an available scoring box to play your hand in
-8. Play your hand
-9. Go to the scoring phase
+1. Place N dice in the tray (N = current hand size)
+1. Roll all the dice in the tray to determine your hand
+1. Move any dice you want to keep into the dice queue
+1. Re-roll any dice you leave in the tray
+1. Repeat steps 2-3 until no re-rolls remain, or all the dice are queued to play
+1. Select an available scoring box to play your hand in
+1. Play your hand
+1. Go to the scoring phase
 
 Perks can be sold, and active perks can be used, at any time during the rolling phase.
 
-You must enter a hand into a scoring box on your scorecard every round. The scorng box in each category can only be filled in once per round (unless modified by a perk).
+You must enter a hand into a scoring box on your scorecard every round. The scoring box in each category can only be filled in once per round. Some perks can increase the number of times you can score a category in a round.
 
 #### Scoring Phase
 
 Each hand ends with the scoring phase. The scoring happens automatically in the order listed below:
 
 1. Apply any perks that modify the category bonus
-2. Apply any perks that modify the category multiplier
-3. For each die in the queue from left to right:
+1. Apply any perks that modify the category multiplier
+1. For each die in the queue from left to right:
    1. Add the face value to the category score box
-   2. Apply any modifiers on the die face
-4. Add the category bonus to the score box
-5. Multiply the value in the score box by the category multiplier
+   1. Apply any perks on the die face
+1. Add the category bonus to the score box
+1. Multiply the value in the score box by the category multiplier
    - This is your hand score
-6. Apply any perks that modify your hand score
-7. Add your hand score to your round score
-8. Apply any perks that modify your round score, if this is the last hand in the round
-9.  Apply any perks that modify the category reward
-10. Add the category reward to your wallet
+1. Apply any perks that modify your hand score
+1. Add your hand score to your round score
+1. Apply any perks that modify your round score, if this is the last hand in the round
+1. Apply any perks that modify the category reward
+1. Add the category reward to your wallet
+2. Go to the next hand
 
 ### Playing Rounds
 
@@ -164,7 +269,7 @@ When you win round 15, you win the run, and can choose to continue playing in "e
 
 ## Boss Rounds
 
-Rounds 3, 6, 9, and 12 are boss rounds, and round 15 is the final boss. Boss rounds apply a random debuff to all hands in the round. The pool of available debuffs is different for each boss round. So any debuff that appears in round 5 will never appear in round 10 or 15. Debuffs become more impactful and potentially run ending as the rounds progress towards the final boss.
+Rounds 3, 6, 9, and 12 are boss rounds, and round 15 is the final boss. Boss rounds apply a random debuff to all hands in the round. The pool of available debuffs is different for each boss round. So any debuff that appears in round 5 will never appear in round 10 or 15. Debuffs become more impactful and potentially run-ending as the rounds progress to the final boss.
 
 ## Unlocking Features
 
@@ -198,7 +303,7 @@ Higher difficulty levels also have debuffs that apply for the whole run.
 
 These are the chances for each dice type to appear for purchase in the shop:
 
-- D4 - 35%
-- D6 - 45%
+- D4 - 20%
+- D6 - 60%
 - D8 - 15%
 - D10 - 5%
