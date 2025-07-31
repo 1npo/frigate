@@ -2,6 +2,9 @@
 
 A Yahtzee-themed roguelike deckbuilding game inspired by Balatro
 
+>[!NOTE]
+> This is a proof-of-concept. If the idea works out I plan to polish it, re-write it in Kotlin, and release it on app stores.
+
 ## Contents
 
 - [Frigate](#frigate)
@@ -14,17 +17,11 @@ A Yahtzee-themed roguelike deckbuilding game inspired by Balatro
 
 ## How to Play
 
-The preferred way to download and play Frigate is with `uvx`. These instructions assume you've already [installed `uv`](https://docs.astral.sh/uv/getting-started/installation/).
+The recommended way to download and play Frigate is with `uvx`.
 
-1. Open a terminal
-2. Run `uvx frigate-game`
-3. Play Frigate!
-
-To run Frigate in web server mode:
-
-1. Open a terminal
-2. Run `uvx frigate-game --web --host 127.0.0.1 --port 8080`
-3. Open [http://127.0.0.1:8080/](http://127.0.0.1:8080/) in your web browser
+1. [Install `uv`](https://docs.astral.sh/uv/getting-started/installation/)
+2. Open a terminal
+3. Run `uvx frigate-game`
 4. Play Frigate!
 
 ## Screenshots

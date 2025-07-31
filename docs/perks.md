@@ -27,6 +27,17 @@
   - Passive
   - Active
 
+## Modified Objects
+
+- Dice
+- Die faces
+- Category bonus
+- Category mult
+- Category reward
+- Shop costs
+- Perks
+- Inventory
+
 ## Modification Triggers
  
 - When {perk} is applied in the scoring phase
@@ -52,6 +63,7 @@
 
 ### Scoring Modifications
 
+- Increase number of re-rolls by 1
 - Increase hand size by 1 (stops appearing when hand size is the max 8)
 - Increase number of times {category} can be scored in a round by 1
 - Upgrade level of selected category {value} time(s)
@@ -84,7 +96,6 @@
 ### Inventory Modifications
 
 - Increase inventory size by {value}
-- Increase perk queue size by {value}
 - Add {count} random perk(s) to your inventory
 - Add {count} random perk(s) to your inventory when hand scores 0
 - {chance} chance that the first {perk_type} in the next shop is {rarity}
@@ -101,18 +112,7 @@
 
 ## List of Perks
 
-Perks are listed in this format:
-
-- Name
-- Cost
-- Edition
-- Rarity
-- Duration
-- Mode
-- Modifications
-  - Description 1
-  - ...
-  - Description N
+See [all_perks.csv](all_perks.csv) for a comprehensive list of all perks and their attributes.
 
 ### Counts
 
