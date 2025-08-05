@@ -1,9 +1,9 @@
 ## What to Contribute
 
 - Report bugs
-- Request enhancements or changes
+- Request enhancements or changes to the game
 - Submit pull requests to fix bugs
-- Submit pull requests to implement enhancements or changes
+- Submit pull requests to implement game enhancements or changes
 
 ## How to Contribute
 
