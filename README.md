@@ -3,7 +3,7 @@
 A Yahtzee-themed roguelike deckbuilding game inspired by Balatro
 
 >[!NOTE]
-> This is a proof-of-concept. If the idea works out I plan to polish it, re-write it in Kotlin, and release it on app stores.
+> This is a proof-of-concept. If the idea works out and turns out to be fun, I plan to polish it, re-write it in Kotlin, and release it on app stores. Maybe I'll even make a website or something.
 
 ## Contents
 
@@ -12,6 +12,7 @@ A Yahtzee-themed roguelike deckbuilding game inspired by Balatro
   - [How to Play](#how-to-play)
   - [Screenshots](#screenshots)
   - [Documentation](#documentation)
+  - [Motivation](#motivation)
   - [Acknowledgements](#acknowledgements)
   - [Contributing](#contributing)
 
@@ -32,6 +33,10 @@ The recommended way to download and play Frigate is with `uvx`.
 
 * See [docs/rulebook.md](docs/rulebook.md) for the game's rulebook
 * See [docs/design/overview.md](docs/design/overview.md) for the game's technical documentation
+
+## Motivation
+
+I created Frigate because I love Balatro, and I really wanted to play a game that applies similar roguelike deckbuilding mechanics to Yahtzee instead of poker. I wanted to work on a personal software project I'd actually use regularly, so that I'd stay motivated to keep working on it until it was "finished", and Frigate fit the bill.
 
 ## Acknowledgements
 

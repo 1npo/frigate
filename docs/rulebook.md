@@ -11,14 +11,12 @@ This rulebook explains how to play Frigate.
     - [Scorecard](#scorecard)
     - [Dice](#dice)
     - [Perks](#perks)
-      - [Description](#description)
-      - [Types](#types)
+      - [Categories](#categories)
+      - [Modifications](#modifications)
+      - [Modified Components](#modified-components)
       - [Durations](#durations)
       - [Perk Modes](#perk-modes)
       - [Rarities](#rarities)
-      - [Targets](#targets)
-      - [Actions](#actions)
-      - [Values](#values)
       - [Inventory](#inventory)
     - [Money](#money)
     - [Shop](#shop)
@@ -34,17 +32,16 @@ This rulebook explains how to play Frigate.
     - [Difficulty Levels](#difficulty-levels)
       - [Level Scaling](#level-scaling)
       - [Debuffs](#debuffs)
-  - [Chances](#chances)
 
 ## Objective
 
-Win a round of Frigate by playing Yahtzee-style dice hands until your score matches or exceeds the round's score target. Each round has a higher score target than the previous round. So you build a scoring engine with dice and perks that can keep up with the increased score targets. Win a game (run) by winning 15 rounds. 
+Win a round of Frigate by playing Yahtzee-style dice hands until your score matches or exceeds the round's score target. Each round has a higher score target than the previous round. Build a scoring engine with dice and perks to keep up with the increased score targets. Win a game (run) by winning 15 rounds. 
 
 ## Components
 
 You start each run with the following:
 
-- A scorecard that lists a set of 15 scoring categories
+- A scorecard that lists 15 scoring categories
 - A collection of 5 D6 dice
 - 3 random perk cards in an inventory that holds 5 cards
 - A wallet containing $5 of starting money
@@ -68,76 +65,39 @@ See [docs/categories.md](categories.md) for an exhaustive list of all categories
 
 ### Dice
 
-You start with a set of 5 D6 dice. Perk cards can be used to add, remove, or modify dice in your collection. They can also change the values on die faces and apply perks to them. Dice purchased in the shop will occasionally have perks on one or more of their faces. You can add an unlimited number of dice to your collection. The available types of dice are D4, D6, D8, and D10.
+You start with a set of 5 D6 dice. Perk cards can be used to add, remove, or modify dice in your collection. They can also change the values on die faces and apply modifications to them. Dice purchased in the shop will occasionally have modifications on one or more of their faces. You can add an unlimited number of dice to your collection. The available types of dice are D4, D6, D8, and D10.
 
 ### Perks
 
-A perk modifies something about one or more game components, and has the following attributes:
+A perk modifies something about one or more game components. There are two types of perks: perk cards and dice perks. Perk cards are cards that appear in your inventory and can be purchased in the shop. Dice perks are modifications applied to die faces.
 
-- Name
-- Description
-- Type
-- Duration
-- Mode
-- Rarity
-- Target
-- Action
-- Value
-- Trigger (optional)
-- Condition (optional)
+See [docs/perks.md](perks.md) for an exhaustive list of all perks and details about them.
 
-See [docs/perks.md](perks.md) for an exhaustive list of all perks and their details.
+#### Categories
 
-#### Description
+All perks belong to one or more of these 3 categories:
 
-The description of a perk describes the duration, mode, target, action, value, trigger, and duration of the perk. The description uses a consistent naming and phrasing scheme. For example, the perk descriptions contain the following attributes:
+- **Economy** perks influence your wallet, how much money you make, how much things cost in the shop, and how much perks and dice sell for
+- **Scoring** perks influence your hand score, your round score, and the level and scoring of scorecard categories
+- **Support** perks influence your perk card inventory and dice collection, and round debuffs
 
-- `Create 1 random Uncommon perk when Small Straight is scored with a hand of 1,2,3,4`
-  - **Duration** -> Permanent
-  - **Target** -> random Uncommon perk 
-  - **Action** -> Create
-  - **Value** -> 1
-  - **Trigger** -> Score a Small Straight
-  - **Condition** -> Hand contains 1,2,3,4
+#### Modifications
 
-- `Gain +1 multiplier every time {category} is scored (category changes at end of hand, currently +?)`
-  - **Duration** -> Permanent
-  - **Target** -> The perk card itself
-  - **Action** -> Add
-  - **Value** -> 1
-  - **Trigger** -> Category is scored
+Perks perform one or more of these actions when modifying a game component:
 
-#### Types
+- Set a value
+- Add a value
+- Subtract a value
+- Multiply a value
+- Create an object
+- Destroy an object
+- Disable an object
 
-There are two types of perks: perk cards and dice perks. Perk cards are cards that appear in your inventory and can be purchased in the shop. Dice perks are perks applied to die faces.
+Dice and perk cards can be created, destroyed, or disabled. Scorecard categories can only be created or disabled. Debuffs can only be disabled. Every other game component that's modified by a perk is a number that's set, added to, subtracted from, or multiplied.
 
-#### Durations
+#### Modified Components
 
-The duration indicates how long the perk exists in your inventory. There are 3 durations:
-
-- **Permanent** perks remain in effect until the perk is destroyed or sold
-- **Temporary** perks expire after a certain duration (usually after some number of hands or rounds)
-- **One-time** perks are destroyed immediately after they're activated
-
-#### Perk Modes
-
-The mode indicates how the perk is activated. There are 2 modes:
-
-- **Active** perks apply their modifications when they're used by the player
-- **Passive** perks apply their modifications automatically when some condition is met
-
-#### Rarities
-
-The rarity indicates how impactful the perk is, and how likely you are to start with it or find it in the shop. The rarer a perk is, the more impactful it is to the game, and the harder it is to find. There are 4 rarities:
-
-- **Common** perks have a %60 chance of appearing
-- **Uncommon** perks have a %25 chance of appearing
-- **Rare** perks have a %10 chance of appearing
-- **Legendary** perks have a %5 chance of appearing
-
-#### Targets
-
-Perks target one or more of these game components:
+Perks modify one or more of these game components:
 
 - Dice
 - Dice faces
@@ -157,23 +117,29 @@ Perks target one or more of these game components:
 - Perk value
 - Inventory size
 
-#### Actions
+#### Durations
 
-Perks perform one or more of these actions on the target:
+The duration indicates how long the perk exists in your inventory. There are 3 durations:
 
-- Set a value
-- Add a value
-- Subtract a value
-- Multiply a value
-- Create an object
-- Destroy an object
-- Disable an object
+- **Permanent** perks remain in effect until the perk is destroyed or sold
+- **Temporary** perks expire after a certain duration (usually after some number of hands or rounds)
+- **Consumable** perks can be used one or more limited number of times, and are then destroyed
 
-Dice and perk cards can be created, destroyed, or disabled. Scorecard categories can only be created. Debuffs can only be disabled. Every other game component that's modified by a perk is a number that's set, added to, subtracted from, or multiplied.
+#### Perk Modes
 
-#### Values
+The mode indicates how the perk is activated. There are 2 modes:
 
-The value of a perk is the amount that the target is modified by, or the name of the object being created, destroyed, or disabled. For example, in this perk description, the value is 1: `Add $1 to category reward for each die in collection`.
+- **Active** perks apply their modifications when they're used by the player
+- **Passive** perks apply their modifications automatically when some condition is met
+
+#### Rarities
+
+The rarity indicates how impactful the perk is, and how likely you are to start with it or find it in the shop. The rarer a perk is, the more impactful it is to the game, and the harder it is to find. There are 4 rarities:
+
+- **Common** perks have a %60 chance of appearing
+- **Uncommon** perks have a %25 chance of appearing
+- **Rare** perks have a %10 chance of appearing
+- **Legendary** perks have a %5 chance of appearing
 
 #### Inventory
 
@@ -236,7 +202,7 @@ Each hand begins with the rolling phase:
 1. Play your hand
 1. Go to the scoring phase
 
-Perks can be sold, and active perks can be used, at any time during the rolling phase.
+Dice and perk cards can be sold, and active perks can be used, at any time during the rolling phase.
 
 You must enter a hand into a scoring box on your scorecard every round. The scoring box in each category can only be filled in once per round. Some perks can increase the number of times you can score a category in a round.
 
@@ -244,20 +210,21 @@ You must enter a hand into a scoring box on your scorecard every round. The scor
 
 Each hand ends with the scoring phase. The scoring happens automatically in the order listed below:
 
-1. Apply any perks that modify the category bonus
-1. Apply any perks that modify the category multiplier
-1. For each die in the queue from left to right:
+1. For each perk in your inventory from left to right:
+   1. Apply any perk that modifies the category bonus
+   2. Apply any perk that modifies the category multiplier
+2. For each die in the queue from left to right:
    1. Add the face value to the category score box
-   1. Apply any perks on the die face
-1. Add the category bonus to the score box
-1. Multiply the value in the score box by the category multiplier
+   2. Apply any perks on the die face
+3. Add the category bonus to the score box
+4. Multiply the value in the score box by the category multiplier
    - This is your hand score
-1. Apply any perks that modify your hand score
-1. Add your hand score to your round score
-1. Apply any perks that modify your round score, if this is the last hand in the round
-1. Apply any perks that modify the category reward
-1. Add the category reward to your wallet
-2. Go to the next hand
+5. Apply any perks in your inventory that modify your hand score, from left to right
+6. Add your hand score to your round score
+7. If this is the last hand in the round: Apply any perks that modify your round score, from left to right
+8.  Apply any perks in your inventory that modify the category reward, from left to right
+9.  Add the category reward to your wallet
+10. Go to the next hand
 
 ### Playing Rounds
 
@@ -298,12 +265,3 @@ Higher difficulty levels also have debuffs that apply for the whole run.
 *Debuffs are TBD and will be worked out through trial and error during development.*
 
 *Add description or table of debuffs here once determined.*
-
-## Chances
-
-These are the chances for each dice type to appear for purchase in the shop:
-
-- D4 - 20%
-- D6 - 60%
-- D8 - 15%
-- D10 - 5%
