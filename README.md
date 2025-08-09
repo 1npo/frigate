@@ -36,7 +36,7 @@ The recommended way to download and play Frigate is with `uvx`.
 
 ## Motivation
 
-I created Frigate because I love Balatro, and I really wanted to play a game that applies similar roguelike deckbuilding mechanics to Yahtzee instead of poker. I wanted to work on a personal software project I'd actually use regularly, so that I'd stay motivated to keep working on it until it was "finished", and Frigate fit the bill.
+I created Frigate because I love Balatro, and I really wanted to play a game that applies similar roguelike deckbuilding mechanics to Yahtzee instead of poker. I also wanted to work on a personal software project I'd actually use regularly, so that I'd stay motivated to keep working on it until it was "finished".
 
 ## Acknowledgements
 

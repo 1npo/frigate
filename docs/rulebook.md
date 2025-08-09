@@ -53,13 +53,13 @@ You start each run with the following:
 You start with a scorecard that has 15 categories of hands you can play. Each scoring category has the following attributes:
 
 - A level
-- A scoring calculation
+- A score calculation
 - A bonus
-- a multiplier
+- A multiplier
 - A reward
-- A a scoring box
+- A scoring box
 
-Category levels can be upgraded to permanently increase their bonus, multiplier, and reward. Additional scoring categories become available to purchase in the shop when you have the dice needed to play those hands. For example, the "Eights" category becomes available when your dice set includes at least one D8.
+The score calculation determines how rolled dice are summed to get your base points. Bonus points are additional points added to your base points. The resulting score is then multiplied by the multiplier. Category levels can be upgraded to permanently increase their bonus, multiplier, and reward. Additional scoring categories become available to purchase in the shop when you have the dice needed to play those hands. For example, the "Eights" category becomes available when your dice set includes at least one D8.
 
 See [docs/categories.md](categories.md) for an exhaustive list of all categories and their details.
 
@@ -75,7 +75,7 @@ See [docs/perks.md](perks.md) for an exhaustive list of all perks and details ab
 
 #### Categories
 
-All perks belong to one or more of these 3 categories:
+All perks (both perk cards and dice perks) belong to one or more of these 3 categories:
 
 - **Economy** perks influence your wallet, how much money you make, how much things cost in the shop, and how much perks and dice sell for
 - **Scoring** perks influence your hand score, your round score, and the level and scoring of scorecard categories
