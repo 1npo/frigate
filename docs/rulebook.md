@@ -9,6 +9,9 @@ This rulebook explains how to play Frigate.
   - [Objective](#objective)
   - [Components](#components)
     - [Scorecard](#scorecard)
+      - [Scorecard Categories](#scorecard-categories)
+        - [Base Categories](#base-categories)
+        - [Purchaseable Categories](#purchaseable-categories)
     - [Dice](#dice)
     - [Perks](#perks)
       - [Categories](#categories)
@@ -61,7 +64,47 @@ You start with a scorecard that has 15 categories of hands you can play. Each sc
 
 The score calculation determines how rolled dice are summed to get your base points. Bonus points are additional points added to your base points. The resulting score is then multiplied by the multiplier. Category levels can be upgraded to permanently increase their bonus, multiplier, and reward. Additional scoring categories become available to purchase in the shop when you have the dice needed to play those hands. For example, the "Eights" category becomes available when your dice set includes at least one D8.
 
-See [docs/categories.md](categories.md) for an exhaustive list of all categories and their details.
+#### Scorecard Categories
+
+##### Base Categories
+
+| Category | Score Calculation | Base Score Bonus | Base Score Multiplier | Base Reward | Upgrading Adds Score / Bonus |
+| --- | --- | --- | --- | --- | --- |
+| Aces | Sum of all dice with 1 | +2 | x2 | $1 | +2 / x1 |
+| Twos | Sum of all dice with 2 | +2 | x2 | $1 | +2 / x1 |
+| Threes | Sum of all dice with 3 | +2 | x2 | $1 | +2 / x1 |
+| Fours | Sum of all dice with 4 | +2 | x2 | $1 | +2 / x1 |
+| Fives | Sum of all dice with 5 | +2 | x2 | $1 | +2 / x1 |
+| Sixes | Sum of all dice with 6 | +2 | x2 | $1 | +2 / x1 |
+| Wild | Sum of all dice | +2 | x2 | $1 | +2 / x1 |
+| Pair | Sum of the 2 paired dice | +4 | x2 | $1 | +4 / x1 |
+| *Two Pair | Sum of the 4 dice | +4 | x2 | $1 | +4 / x1 |
+| *Full House | Sum of all 5 dice | +6 | x2 | $1 | +6 / x1 |
+| *Three of a Kind | Sum of the 3 dice | +6 | x2 | $1 | +6 / x1 |
+| *Four of a Kind | Sum of the 4 dice | +6 | x2 | $1 | +6 / x1 |
+| *Five of a Kind | Sum of the 5 dice | +8 | x3 | $2 | +8 / x1 |
+| *Small Straight | Sum of the 4 consecutive dice | +8 | x3 | $2 | +8 / x1 |
+| *Large Straight | Sum of all 5 consecutive dice | +8 | x3 | $2 | +8 / x1 |
+
+\* This category will become deactivated if the current hand size is reduced to less than 5 dice. It will be reactivated once the hand size returns to >= 5.
+
+##### Purchaseable Categories
+
+Each of these categories will be deactivated if the availability requirements are no longer met. If the availability requirements are met again, the category will be reactivated without needing to be re-purchased.
+
+| Category | Score Calculation | Base Score Bonus | Base Score Multiplier | Base Reward | Upgrading Adds Score / Bonus | Cost in Shop | Availability Requirements |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Sevens | Sum of all dice with 7 | +2 | x2 | $1 | +2 / x1 | $2 | At least 1 D8 or D10 in collection |
+| Eights | Sum of all dice with 8 | +2 | x2 | $1 | +2 / x1 | $2 | At least 1 D8 or D10 in collection |
+| Nines | Sum of all dice with 9 | +2 | x2 | $1 | +2 / x1 | $2 | At least 1 D10 in collection |
+| Tens | Sum of all dice with 10 | +2 | x2 | $1 | +2 / x1 | $2 | At least 1 D10 in collection |
+| Triple Pair | Sum of the 6 dice | +8 | x3 | $2 | +8 / x1 | $3 | Hand size is at least 6 |
+| Double Two Pair | Sum of the 8 dice | +8 | x3 | $2 | +8 / x1 | $3 | Hand size is 8 |
+| Double Small Straight | Sum of the 8 dice | +14 | x3 | $3 | +14 / x2 | $4 | Hand size is 8 |
+| Full Straight | Sum of the 6-8 dice | +14 | x3 | $3 | +14 / x2 | $4 | Hand size is at least 6 |
+| Six of a Kind | Sum of the 6 dice | +16 | x4 | $4 | +16 / x3 | $4 |  Hand size is at least 6 |
+| Seven of a Kind | Sum of the 7 dice | +18 | x5 | $4 | +18 / x3 | $4 | Hand size is at least 7 |
+| Eight of a Kind | Sum of the 8 dice | +20 | x6 | $4 | +20 / x3 | $4 | Hand size is 8 |
 
 ### Dice
 
@@ -71,7 +114,7 @@ You start with a set of 5 D6 dice. Perk cards can be used to add, remove, or mod
 
 A perk modifies something about one or more game components. There are two types of perks: perk cards and dice perks. Perk cards are cards that appear in your inventory and can be purchased in the shop. Dice perks are modifications applied to die faces.
 
-See [docs/perks.md](perks.md) for an exhaustive list of all perks and details about them.
+See [docs/all_perks.csv](all_perks.csv) for a comprehensive list of all perks and their attributes.
 
 #### Categories
 
