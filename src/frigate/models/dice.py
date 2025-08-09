@@ -1,8 +1,9 @@
+"""Defines objects related to dice"""
+
 from dataclasses import dataclass, field
 from enum import Enum
 
-MAX_DICE_IN_SET = 8
-MAX_REROLLS_AT_START = 2
+from models.perks import Perk
 
 
 class DieType(Enum):
@@ -13,16 +14,30 @@ class DieType(Enum):
 
 
 @dataclass
-class Die:
-    type: DieType
-    faces: list[int] = field(default_factory=list)
-
-    def __post_init__(self):
-        self.faces = [i for i in range(1, self.type.value + 1)]
+class DieFace:
+    value: int
+    perks: list[Perk] = field(default_factory=list)
 
 
 @dataclass
-class DiceSet:
-    dice: list[Die]
-    hold: list[Die] = field(default_factory=list)
-    rerolls: int = MAX_REROLLS_AT_START
+class Die:
+    type: DieType
+    faces: list[DieFace] = field(default_factory=list)
+    shop_cost: int = None
+
+    def __post_init__(self):
+        self.faces = [DieFace(value=i) for i in range(1, self.type.value + 1)]
+
+
+@dataclass
+class DiceCollection:
+    dice: list[Die] = field(default_factory=list)
+
+    def add_die(self, die: Die):
+        raise NotImplementedError()
+
+    def remove_die(self, die: Die):
+        raise NotImplementedError()
+
+    def sell_die(self, die: Die):
+        raise NotImplementedError()

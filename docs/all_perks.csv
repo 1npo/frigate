@@ -1,11 +1,11 @@
 Name,Cost,Rarity,Perk Type,Perk Category,Duration,Mode,Description,Comments
-,,,Dice Perk,Economy,Permanent,Passive,Earn $1 every time die is scored in the last queue slot,
-,,,Dice Perk,Scoring,Permanent,Passive,Add +10 multiplier to scored category if rolled number is between N and M (range changes each hand),
-,,,Dice Perk,Scoring,Permanent,Passive,Add +50 bonus points to scored category if rolled number is between N and M (range changes each hand),
-,,,Dice Perk,Scoring,Permanent,Passive,"Add bonus points to scored category (currently +?), gains +10 bonus points every time die is scored with a N in the Nth queue slot (ex, rolled 2 is in the 2nd queue slot when scored)",
-,,,Dice Perk,Scoring,Permanent,Passive,"Add multiplier to scored category (currently +?), gains +5 multiplier every time die is scored with a N in the Nth queue slot (ex, rolled 2 is in the 2nd queue slot when scored)",
-,,,Dice Perk,Scoring,Permanent,Passive,Add x0.25 multiplier to scored category if rolled number is between N and M (range changes each hand),
-,,,Dice Perk,Scoring,Permanent,Passive,"Multiply hand score by amount (currently +?), gains +2 multiplier every time a hand is scored with a 2 in the second queue slot",
+,4,Common,Dice Perk,Economy,Permanent,Passive,Earn $1 every time die is scored,
+,4,Common,Dice Perk,Scoring,Permanent,Passive,Add +10 multiplier to scored category when die is scored in the Nth queue slot (slot number changes each hand),
+,4,Common,Dice Perk,Scoring,Permanent,Passive,Add +50 bonus points to scored category when die is scored in the Nth queue slot (slot number changes each hand),
+,6,Uncommon,Dice Perk,Scoring,Permanent,Passive,"Add +0 bonus points to scored category, gains +10 bonus points every time die is scored in the Nth queue slot (slot number changes each hand)",
+,6,Uncommon,Dice Perk,Scoring,Permanent,Passive,"Add +0 multiplier to scored category, gains +5 multiplier every time die is scored in the Nth queue slot (slot number changes each hand)",
+,4,Common,Dice Perk,Scoring,Permanent,Passive,Add x0.25 multiplier to scored category when die is scored in the Nth queue slot (slot number changes each hand),
+,6,Uncommon,Dice Perk,Scoring,Permanent,Passive,"Multiply hand score by +0, gains +2 multiplier when die is scored in the Nth queue slot (slot number changes each hand)",
 ,5,Uncommon,Perk Card,Economy,Consumable,Active,All categories in the next shop are free,
 ,5,Uncommon,Perk Card,Economy,Consumable,Active,All category upgrades in the next shop are free,
 ,5,Uncommon,Perk Card,Economy,Consumable,Active,All dice in the next shop are free,
@@ -21,7 +21,7 @@ Name,Cost,Rarity,Perk Type,Perk Category,Duration,Mode,Description,Comments
 ,4,Common,Perk Card,Scoring,Permanent,Passive,Add +5 bonus points to scored category for every $1 in your wallet,
 ,4,Common,Perk Card,Scoring,Permanent,Passive,Add +5 bonus points to scored category for every die in collection,
 ,3,Common,Perk Card,Scoring,Permanent,Passive,Add +600 bonus points to scored category when Sixes is scored with a full hand of 6s,
-,,,Perk Card,Scoring,Permanent,Passive,"Add x0 multiplier to scored category, gains x0.1 multiplier every time a category is upgraded",
+,8,Uncommon,Perk Card,Scoring,Permanent,Passive,"Add x0 multiplier to scored category, gains x0.1 multiplier every time a category is upgraded",
 ,10,Uncommon,Perk Card,Scoring,Permanent,Passive,"Add x0 multiplier to scored category, gains x0.15 multiplier for every die added to collection",
 ,4,Common,Perk Card,Scoring,Permanent,Passive,Add x0.15 multiplier to hand score for every die in collection,
 ,4,Common,Perk Card,Scoring,Permanent,Passive,Evaluate the first die in the queue 2 times when a hand is scored,
@@ -34,7 +34,7 @@ Name,Cost,Rarity,Perk Type,Perk Category,Duration,Mode,Description,Comments
 ,3,Common,Perk Card,Support,Consumable,Active,Add 2 random Common perks to your inventory (must have room),
 ,5,Uncommon,Perk Card,Support,Consumable,Active,Add 2 random Uncommon perks to your inventory (must have room),
 ,4,Common,Perk Card,Support,Consumable,Active,Apply {dice_perk} to 1 face of selected die,There should be 1 of these for each dice perk
-,8,Uncommon,Perk Card,Support,Consumable,Active,Apply {dice_perk} to ½ of the faces on the selected die,There should be 1 of these for each dice perk
+,8,Uncommon,Perk Card,Support,Consumable,Active,Apply {dice_perk} to half of the faces on the selected die,There should be 1 of these for each dice perk
 ,12,Rare,Perk Card,Support,Consumable,Active,Apply {dice_perk} to all faces of the selected die,There should be 1 of these for each dice perk
 ,9,Uncommon,Perk Card,Support,Consumable,Active,Decrease hand size by 1,
 ,6,Uncommon,Perk Card,Support,Consumable,Active,Disable 1 random debuff in the next boss round,
@@ -42,8 +42,8 @@ Name,Cost,Rarity,Perk Type,Perk Category,Duration,Mode,Description,Comments
 ,12,Rare,Perk Card,Support,Permanent,Passive,1 in 10 chance to create a Rare perk card in your inventory at the end of the hand,
 ,5,Common,Perk Card,Support,Permanent,Passive,1 in 4 chance to create a Common perk card in your inventory at the end of the hand,
 ,9,Uncommon,Perk Card,Support,Permanent,Passive,1 in 7 chance to create a Uncommon perk card in your inventory at the end of the hand,
-,4,common,Perk Card,Support,Permanent,Passive,Add 1 {dice_type} to your collection every time {category} is scored (dice type and category change each round),
-,,,Perk Card,Support,Permanent,Passive,Add 2 Common perk cards to your inventory at the start of the round (must have room),
+,4,Common,Perk Card,Support,Permanent,Passive,Add 1 {dice_type} to your collection every time {category} is scored (dice type and category change each round),
+,4,Common,Perk Card,Support,Permanent,Passive,Add 2 Common perk cards to your inventory at the start of the round (must have room),
 ,10,Rare,Perk Card,Support,Permanent,Passive,Copies the ability of the first perk in your inventory (currently: {perk#0.Name}),
 ,10,Rare,Perk Card,Support,Permanent,Passive,Copies the ability of the last perk in your inventory (currently: {perk#-1.Name}),
 ,20,Legendary,Perk Card,Support,Permanent,Passive,Create 1 random Uncommon or Rare perk in your inventory every time a hand is scored,
